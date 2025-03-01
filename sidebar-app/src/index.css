@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f0f0f0;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  position: fixed;
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  text-align: right;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-item:hover {
+  background: #ddd;
+}
+
+.toggle-icon {
+  margin-right: 8px;
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem;
+  transition: margin 0.3s ease;
+}
+
+.content.shifted {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 70px;
+  }
+  .content.shifted {
+    margin-left: 0 !important; /* Add this to override desktop margin */
+  }
+}
