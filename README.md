@@ -24,7 +24,7 @@ A responsive sidebar implementation with nested menus and mobile-friendly burger
 
 1.  Clone repository:
 
-    git clone https://github.com/your-username/react-nested-sidebar.git
+    git clone [https://github.com/your-username/react-nested-sidebar.git](https://github.com/AryaKS01/Interview-1.git)
     
 
 2.  Install dependencies:
