@@ -2,7 +2,6 @@
 
 A responsive sidebar implementation with nested menus and mobile-friendly burger menu toggle.
 
-![Sidebar Demo](https://chatgpt.com/c/public/sidebar-demo.png)
 
 ## Features
 
