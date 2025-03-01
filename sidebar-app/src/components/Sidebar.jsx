@@ -99,7 +99,9 @@ const SidebarItem = ({ item, level = 0 }) => {
   const hasChildren = item.childs && item.childs.length > 0;
 
   return (
-    <li style={{ paddingLeft: `${level * 20}px` }}>
+    <li style={{ "--level": level }}>
+      {" "}
+      {/* CSS variable for level */}
       <div
         className="sidebar-item"
         onClick={() => hasChildren && setIsOpen(!isOpen)}
@@ -107,7 +109,7 @@ const SidebarItem = ({ item, level = 0 }) => {
         {hasChildren && (
           <span className="toggle-icon">{isOpen ? "▼" : "▶"}</span>
         )}
-        {item.title}
+        <span className="item-text">{item.title}</span>
       </div>
       {hasChildren && isOpen && (
         <ul>

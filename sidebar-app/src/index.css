@@ -74,6 +74,37 @@
 .content.shifted {
   margin-left: 250px;
 }
+.sidebar {
+  width: 250px;
+  background: #f0f0f0;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  position: fixed;
+  left: 0;
+  overflow-y: auto; /* Add scroll for overflow */
+}
+
+.sidebar-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  max-width: 100%; /* Ensure it doesn't overflow parent */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Update the padding calculation */
+.sidebar-item {
+  padding-left: calc(15px * var(--level, 0) + 10px);
+}
+
+.toggle-icon {
+  margin-right: 8px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
 
 @media (max-width: 768px) {
   .sidebar {
