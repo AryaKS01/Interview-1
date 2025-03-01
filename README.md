@@ -111,14 +111,4 @@ Sample mock data format in `Sidebar.jsx`:
 3.  Adjust breakpoints in media queries
 4.  Change sidebar width in CSS variables
 
-## Contributing
 
-1.  Fork the project
-2.  Create your feature branch
-3.  Commit changes
-4.  Push to the branch
-5.  Open a PR
-
-## License
-
-MIT © \[Your Name\]
