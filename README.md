@@ -1,114 +1,67 @@
 # React Nested Sidebar Application
 
-A responsive sidebar implementation with nested menus and mobile-friendly burger menu toggle.
+# 
 
+A modern responsive sidebar with improved visibility for nested menus and optimized mobile experience.
 
 ## Features
 
-*   📱 Responsive design (mobile/desktop)
-*   🍔 Burger menu toggle for mobile
-*   🐂 Infinite nesting capability
-*   🎨 Clean and minimal UI
-*   🛠️ Smooth animations/transitions
-*   📜 Automatic scroll for overflow
-*   🌳 Recursive component structure
+# 
+
+*   Improved color contrast for readability
+*   Smart indentation and font sizing
+*   Enhanced visibility for nested items
+*   Wider sidebar (280px) for better legibility
+*   Optimized hover states and transitions
+*   Mobile-friendly padding adjustments
 
 ## Technologies Used
 
-*   ⚛️ React 19
-*   🚀 Vite
-*   💅 CSS3 (Flexbox)
-*   🛠️ Vercel (Deployment)
+# 
 
-## Installation
+*   React 19 (Hooks API)
+*   Vite 4.0
+*   CSS Custom Properties
+*   Vercel for deployment
 
-1.  Clone repository:
+## Installation & Setup
 
-    git clone [https://github.com/your-username/react-nested-sidebar.git](https://github.com/AryaKS01/Interview-1.git)
-    
+# 
 
-2.  Install dependencies:
-
+    git clone https://github.com/AryaKS01/Interview-1.git
+    cd react-nested-sidebar
     npm install
-    
-
-3.  Run development server:
-
     npm run dev
     
 
-## Usage
+## Recent Improvements
 
-*   Click on menu items with ▶ to expand nested items
-*   Toggle burger menu (mobile view)
-*   Automatically collapses on mobile screens (<768px)
-*   Deeply nested items show ellipsis (...) for overflow
-*   Smooth transitions for sidebar open/close
+# 
 
-## Data Structure
+*   Improved visual hierarchy and nesting controls
+*   Optimized color scheme for better contrast
+*   Layout refinements for spacing and readability
+*   Responsive adjustments for mobile usability
 
-Sample mock data format in `Sidebar.jsx`:
+## Folder Structure
 
-    {
-      sidebar: [
-        {
-          type: "item",
-          title: "Menu Title",
-          childs: [
-            {
-              type: "item",
-              title: "Nested Item",
-              childs: [] // Add more children here
-            }
-          ]
-        }
-      ]
-    }
+# 
+
+    react-nested-sidebar/
+    ├── src/
+    │   ├── assets/
+    │   ├── components/
+    │   │   ├── Sidebar/
+    │   │   └── BurgerMenu/
+    ├── hooks/
+    ├── utils/
+    └── App.jsx
     
 
 ## Deployment
 
-1.  Create `vercel.json` in root:
+# 
 
-    {
-      "builds": [
-        {
-          "src": "package.json",
-          "use": "@vercel/static-build"
-        }
-      ],
-      "rewrites": [
-        { "source": "/(.*)", "destination": "/index.html" }
-      ]
-    }
-    
+This project is deployed on Vercel with optimized build settings.
 
-2.  Push to GitHub/GitLab/Bitbucket
-    
-3.  Import repository to Vercel:
-    
-    *   Automatic React detection
-    *   Keep default build settings
-    *   Deploy!
-
-## Folder Structure
-
-    ├── src/
-    │   ├── components/
-    │   │   ├── Sidebar.jsx
-    │   │   └── BurgerMenu.jsx
-    │   ├── App.jsx
-    │   ├── main.jsx
-    │   └── index.css
-    ├── vercel.json
-    └── package.json
-    
-
-## Customization
-
-1.  Modify `mockData` in `Sidebar.jsx`
-2.  Update colors in `index.css`
-3.  Adjust breakpoints in media queries
-4.  Change sidebar width in CSS variables
-
-
+[Live Demo](https://sidebar-app1.vercel.app/)
